@@ -16,4 +16,18 @@ For example, if the time is 12:34pm, the ESP32 is to send the value '1' to the f
 The ESP32 sends the number to display to the driver via BCD (binary coded decimal). The BCD driver has 4 BCD inputs (2<sup>0</sup>, 2<sup>1</sup>, 2<sup>2</sup>, 2<sup>3</sup>).
 
 BCD is a method of representing numbers or digits by a set of bits. In our case, 4 bits hence the 4 BCD inputs on our driver. 
-Example, the number (decimal) 0 corresponds to '0000' in BCD. In a similar way, the number (decimal) 
+Example, the number (decimal) 0 corresponds to '0000' in BCD. In a similar way, the number (decimal) 5 corresponds to '0101' in BCD and number 9 corresponds to '0111' in BCD.
+
+The order of these bits is important. Example, the binary number 9 represented as '0111' inputted as '1110' would not work as that represents another number. From the data sheet we see how to get the desired binary value from their BCD value and how to input the BCD into the driver IC. 
+
+### Example: we want our 7-segment display to show the number 3 which corresponds to '0011' in BCD.
+From the data sheet truth table, and pin or terminal assignment, we see that to get a display of 3, we need to input a BCD value of '0011' meaning we would have to set
+pin 2<sup>0</sup> --> HIGH
+pin 2<sup>1</sup> --> HIGH
+pin 2<sup>2</sup> --> LOW
+pin 2<sup>3</sup> --> LOW
+
+Doing this, the decoder will realize a BCD inputs of '0011' has been inputted and outout the binary equivalent 3. It does this by controlling each individual led in the 7 segment display (which is an array of 7 LEDs) in such a way that a '3' is formed by lighting up specific LEDs to form the number 3.
+
+
+
