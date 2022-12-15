@@ -38,3 +38,4 @@ Doing this, the decoder will realize a BCD inputs of '0011' has been inputted an
 ![truth table from datasheet](https://user-images.githubusercontent.com/78376139/207987002-4a80089e-214d-4466-8c55-21cbf1bc7f96.png)
 ![pin assignment](https://user-images.githubusercontent.com/78376139/207987003-c5088481-8683-4ad0-b7ab-720923948132.png)
 
+The complete truth table for this IC can be found in its datasheet
