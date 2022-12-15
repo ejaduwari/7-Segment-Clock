@@ -13,7 +13,7 @@ Overall, the project is fairly simple, the aim is to have the ESP32 module conne
 
 For example, if the time is 12:34pm, the ESP32 is to send the value '1' to the first 7 segment display via the BCD driver. The same thing is done for the other three digits, '2', '3', and '4'
 
-The ESP32 communicates the number to display to the driver  using BCD or binary coded decimal. The BCD driver has 4 BCD inputs (2<sup>0</sup>, 2<sup>1</sup>, 2<sup>2</sup>, 2<sup>3</sup>) also noted as (A,B,C,D). 
+The ESP32 communicates the number to display to the driver using BCD (binary coded decimal). The BCD driver has 4 BCD inputs (2<sup>0</sup>, 2<sup>1</sup>, 2<sup>2</sup>, 2<sup>3</sup>).
 
 BCD is a method of representing numbers or digits by a set of bits. In our case, 4 bits hence the 4 BCD inputs on our driver. 
 Example, the number (decimal) 0 corresponds to '0000' in BCD. In a similar way, the number (decimal) 
