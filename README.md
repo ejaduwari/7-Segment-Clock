@@ -24,7 +24,6 @@ The order of these bits is important. Example, the binary number 9 represented a
 From the data sheet truth table, and pin or terminal assignment, we see that to get a display of 3, we need to input a BCD value of '0011' meaning we would have to set
 
 pin 2<sup>0</sup> --> HIGH
-
 pin 2<sup>1</sup> --> HIGH
 
 pin 2<sup>2</sup> --> LOW
