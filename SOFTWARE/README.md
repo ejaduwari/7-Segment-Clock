@@ -1,3 +1,8 @@
+## Final clock
+
+the final code for this device will be released soon
+
+
 ## Test code
 
 The first test code is simple, it implements the theory previously explained. The objective is to display the values '1', '2', '3', '4' on each of the displays.
